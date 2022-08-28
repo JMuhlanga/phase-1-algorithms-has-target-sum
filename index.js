@@ -1,5 +1,15 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for (let x = 0; x < array.length ; x++){
+    let balance = target - array[x];
+
+    for (let y = 0; y < array.length ; y++){
+      if (array[y] === balance){
+        return true 
+      }
+    }
+  }
+  return false;
 }
 
 /* 
